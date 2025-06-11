@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             lbl_login = new Label();
+            btn_logout = new Button();
             SuspendLayout();
             // 
             // lbl_login
@@ -41,11 +42,23 @@
             lbl_login.TabIndex = 2;
             lbl_login.Text = "Seja bem-vindo, Admin!";
             // 
+            // btn_logout
+            // 
+            btn_logout.Font = new Font("Arial", 14.25F);
+            btn_logout.Location = new Point(306, 378);
+            btn_logout.Name = "btn_logout";
+            btn_logout.Size = new Size(169, 51);
+            btn_logout.TabIndex = 7;
+            btn_logout.Text = "Logout";
+            btn_logout.UseVisualStyleBackColor = true;
+            btn_logout.Click += btn_logout_Click;
+            // 
             // frm_menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btn_logout);
             Controls.Add(lbl_login);
             Name = "frm_menu";
             StartPosition = FormStartPosition.CenterScreen;
@@ -57,5 +70,6 @@
         #endregion
 
         private Label lbl_login;
+        private Button btn_logout;
     }
 }
