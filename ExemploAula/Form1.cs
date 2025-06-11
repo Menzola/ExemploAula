@@ -6,5 +6,10 @@ namespace ExemploAula
         {
             InitializeComponent();
         }
+
+        private void lbl_login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
